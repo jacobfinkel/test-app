@@ -1,10 +1,17 @@
 import logo from './logo.svg';
 import './App.css';
+import UserRegistration from './UserRegistration.tsx';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
+        <UserRegistration 
+          theme="dark"
+          onSignIn={(params) => {
+            console.log('onSignIn');
+            console.log(JSON.stringify(params));
+          }}/>
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.

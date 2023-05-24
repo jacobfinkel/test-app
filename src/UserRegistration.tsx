@@ -2,7 +2,7 @@
 import React, { FC, useContext, useEffect, useState } from 'react';
 //import AppContext, { Language } from '../AppContext';
 //import { IConfig } from '../Config';
-import useScript from './useScript';
+import useScript from './useScript.ts';
 
 export interface SignInParameters {
   signInAttributes: SignInAttributes;
